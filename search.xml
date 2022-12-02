@@ -3,8 +3,25 @@
   <entry>
     <title>新的开始</title>
     <url>/zh/2022/12/01/A-New-Start/</url>
-    <content><![CDATA[<p><img src="/zh/2022/12/01/A-New-Start/screenshot.png"></p>
-]]></content>
+    <content><![CDATA[<h3 id="最开始的需求"><a href="#最开始的需求" class="headerlink" title="最开始的需求"></a>最开始的需求</h3><p>我最开始构建这个项目是因为我的作业要求需要有一个在线的个人工作简历。事实上，我很早之前就已经想要构建一个属于自己的个人站点了，这个作业正好给了我一个付诸实施的理由。</p>
+<h3 id="为啥选用Hexo"><a href="#为啥选用Hexo" class="headerlink" title="为啥选用Hexo?"></a>为啥选用Hexo?</h3><p>老实来讲，我一开始并不知道用什么框架来写。我浏览了很多论坛，<mark>许多人</mark>都推荐了这一个框架并且我也熟悉<mark>nodejs</mark>，这对于我来说应该不难。所以我选择了这一个框架，即使以后我遇到了什么问题我也能很快找到解决方案。</p>
+<h3 id="开始构建"><a href="#开始构建" class="headerlink" title="开始构建"></a>开始构建</h3><p>根据官方的入门指南，我先安装了全局的hexo-cli。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>然后就是初始化项目。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>将很大名鼎鼎的主题 <mark><strong>NexT</strong></mark> 引进我的项目。</p>
+<figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
+
+<p>下面是各种配置文件参数的时间。</p>
+<img src="/zh/2022/12/01/A-New-Start/configs.png" class="" width="600">
+
+<p>为了能简单的设置配置文件，我从<code>node_modules</code>拷贝了一份完整的NexT配置文件到我的目录下。</p>
+<h3 id="设置-Github-pages"><a href="#设置-Github-pages" class="headerlink" title="设置 Github pages"></a>设置 Github pages</h3><p>这个步骤相对来说比较简单，我只需要配置 <strong><code>settings</code></strong> 中的 <strong><code>pages</code></strong> 来把我的项目发布到github上面去就可以了。Hexo还很贴心的给上了github设置的指南和 <strong><code>Action</code></strong> 中对应的workflow代码文件。所以，我所需要做的只是配置文件就行了。</p>
+<h3 id="未来的一点想法"><a href="#未来的一点想法" class="headerlink" title="未来的一点想法"></a>未来的一点想法</h3><p>目前来说，我基本上完成了这个个人站点的搭建，但是还有许多需要完善的地方。我发现这个框架有个巨大的漏洞 - 那就是对多语言的支持不是很好。我查阅了很多资料，但效果都不是很令人满意。我发现的一个解决办法是创建独立的两个仓库并且通过超链接把它们关联起来。幸运的是 <strong><code>github pages</code></strong> 可以做到这一点。</p>
+<p>但是要执行两次发布指令让人不爽。在未来，我可能再建第三个github仓库来把前面两个站点的源代码包含进一个文件夹，然后通过一些脚本来简化操作流程。</p>
+<img src="/zh/2022/12/01/A-New-Start/screenshot.png" class="" width="500" title="长得像这样的项目结构">]]></content>
   </entry>
   <entry>
     <title>关于我</title>
